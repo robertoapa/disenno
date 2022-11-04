@@ -222,9 +222,31 @@ footer>hr{
     
 }
 
+.emergente {
+    background-color: rgb(255, 255, 255);
+    width: 16rem;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    display: none;
+    text-align: center;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+  }
 
+#cerrar_carrito{
+    font-size: large;
 
+}
+#cerrar_carrito:hover{
+    transform: scale(1.1);
 
-
-
-
+}
+.emergente>h2{
+    display: inline;
+}
+.emergente>i{
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}

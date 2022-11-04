@@ -11,12 +11,18 @@
 </head>
 <body>
     <script>
-        const abrir_panel = () =>{
-            const panel= 
-            document.querySelectorAll()
-        }
+   const abrir_panel = () => {
+        const panel = document.querySelectorAll('.emergente')[0].style;
+        panel.display = panel.display === 'none' ? 'block' : 'none';
+      };
 
     </script>
+
+<div class="emergente">
+    <i class="fa-solid fa-xmark" id="cerrar_carrito" onclick="abrir_panel() "></i>
+    <h2>cesta</h2>
+    <hr>
+</div>
 
     <header>
         <div class="izq">
@@ -28,10 +34,13 @@
             <a href="">pedidos especiales</a>  
         </div>
         <div class="carrito-usuario">
-            <i class="fa-solid fa-cart-shopping" id="carrito"></i>
+            <i class="fa-solid fa-cart-shopping" id="carrito" onclick="abrir_panel()"></i>
             <i class="fa-solid fa-user"></i>
         </div>
     </header>
+
+   
+
 
     <div class="titulo">
         <div class="letra">
