@@ -1,0 +1,36 @@
+img{
+    margin-bottom: 2rem;
+    width: 20rem;
+}
+
+.buscador{
+    margin-top: 5px;
+
+    margin-left:40px;
+
+    width: 20rem;
+    border: 0px;
+    
+}
+
+.main{
+  padding-right: auto;  
+  padding-left: 50rem;
+  padding-top: 10rem;
+
+}
+
+.search{
+
+    height: 30px;
+    width: 30rem;
+    border: 1px solid rgb(143, 141, 141);
+    border-radius: 3rem;
+
+}
+
+footer{
+    margin-left: 90%;
+    display: flex;
+    
+}

@@ -1,0 +1,225 @@
+.izq{
+display: flex;
+width: 5.5rem;
+height: 100%;
+background-color: azure;
+
+}
+.der{
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: auto;
+    padding-bottom: auto;
+    display:flex;
+    padding-left: 20%;
+    width: 50%;
+    height: 100%;
+}
+
+
+html body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 4.5rem;
+    background-color: rgb(240, 185, 47);
+    width: 100%;
+}   
+
+
+.logo{
+    height: 5rem;
+}
+
+.der>a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    color: white;
+    font-style:unset;
+}
+
+.der>a:hover{
+    transform: scale(1.1);
+}
+
+.titulo{
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    text-align: center;
+    background-image: url("img/fondoPanes.jpg");
+    background-size:auto;
+    background-repeat: no-repeat;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+
+}
+.letra{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    padding-top: 20%;
+    color: white;
+}
+
+body{
+    background-color: rgba(246, 246, 246, 0.968);
+}
+
+.hola{
+    height: 100px;
+    width: 100px;
+    border: 1px rgb(187, 179, 179) solid;
+    border-radius: 100px;
+    background-color: white;
+    margin-left: 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.cualidades{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+
+
+
+.linea{
+    width: 60%;
+    background-color: rgb(249, 185, 67);
+    height: 1px;
+}
+
+#cuali{
+    margin-top: 20px;
+    color: rgb(78, 74, 74);
+    font-size: 3rem;
+    
+    
+}
+
+
+.diferencia{
+  text-align: center;
+}
+
+
+.texto-diferencia{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 31%;
+}
+
+
+footer{
+    color: white;
+    display: flex;
+    background-color: rgb(8, 12, 57);
+    height: 10rem;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.f-izq{
+    text-align: center;
+    width: 33%;
+    height: 100%;
+}
+.f-cntr{
+    text-align: center;
+    width: 33%;
+    height: 100%;
+
+}
+.f-der{
+    text-align: center;
+    width: 33%;
+    height: 100%;
+
+}
+
+footer>hr{
+    height: 60%;
+    background-color: rgb(174, 174, 174);
+
+}
+
+.f-izq>a{
+    color: white;
+}
+.f-der>i{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.carrito-usuario{
+    display: flex;
+    
+    width: 5rem;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.carrito-usuario>i{
+    
+    color: rgb(236, 236, 236);
+  font-size: 1.5rem;
+}
+
+.carrito-usuario>i:hover{
+    transform: scale(1.1);
+}
+
+
+.card-img-top{
+    height: 10rem;
+    width: 14rem;
+   
+}
+
+.card{
+   
+    text-align: center;
+    height: 21rem;
+    width: 14rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap:var(4);
+    padding-bottom: 3rem;
+}
+
+.precio{
+    color: orange;
+    font-size: xx-large;
+}
+
+
+
