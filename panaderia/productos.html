@@ -1,248 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <div class="izq">
-            <img class="logo" src="img/panaderia_pedrin__1_-removebg-preview.png" alt="logo">
-        </div>
-        <div class="der">
-            <a href="index.html">inicio</a>
-            <a href="productos.html">productos</a>
-            <a href="">pedidos especiales</a>  
-        </div>
-        <div class="carrito-usuario">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-solid fa-user"></i>
-        </div>
-    </header>
-   
+  <script>
+    const abrir_panel = () => {
+      const panel = document.querySelectorAll('.emergente')[0].style;
+      panel.display = panel.display === 'none' ? 'block' : 'none';
+    };
 
-    <div class="productos">
-        <div class="card text-left">
-            <img class="card-img-top" src="img-producto/donuts.jpg" alt="donuts">
-            <div class="card-body">
-              <h2 class="card-title">Donuts caseros</h2>
-              <p class="card-text">Donuts glaseados hechos con nuestra masa al mas estilo pedrin</p>
-              <p class="precio">1€/ud</p>
-            </div>
-          </div>
+  </script>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/baguette.jpg" alt="baguette">
-            <div class="card-body">
-              <h2 class="card-title">Baguette</h2>
-              <p class="card-text">barra de pan baguette crujiente por fuera y tierna </p>
-              <p class="precio">0,60€</p>
-            </div>
-          </div>
+  <div class="emergente">
+    <i class="fa-solid fa-xmark" id="cerrar_carrito" onclick="abrir_panel() "></i>
+    <h2>cesta</h2>
+    <hr>
+    <div class="addCarrito">
+      <div class="headerCarrito">
+        <img src="img-producto/berlinasFresa.jpg" alt="berlinas fresa">
+        <p>Berlinas de fresa</p>
+      </div>
+      <div class="footerCarrito">
+        <p>unidades: 1</p>
+        <p>4,50€</p>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="addCarrito">
+      <div class="headerCarrito">
+        <img src="img-producto/tarta-queso.jpeg" alt="tarta de queso">
+        <p>Tarta de queso</p>
+      </div>
+      <div class="footerCarrito">
+        <p>unidades: 1</p>
+        <p>4,50€</p>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    <div class="pagarCarrito">
+      <a href="Cesta.html">Total pedido: 17,70€</a>
+    </div>
+  </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/berlina.jpeg" alt="berlina">
-            <div class="card-body">
-              <h2 class="card-title">Berlina de crema</h2>
-              <p class="card-text">Berlina casera hecha con nuestra crema y masa muy esponjosa</p>
-              <p class="precio">1,50€/ud</p>
-            </div>
-          </div>
+  <header>
+    <div class="izq">
+      <img class="logo" src="img/panaderia_pedrin__1_-removebg-preview.png" alt="logo">
+    </div>
+    <div class="der">
+      <a href="index.html">inicio</a>
+      <a href="productos.html">productos</a>
+      <a href="pedidosespeciales.html">pedidos especiales</a>
+    </div>
+    <div class="carrito-usuario">
+      <i class="fa-solid fa-cart-shopping" onclick="abrir_panel()"></i>
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </header>
 
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/berlinasFresa.jpg" alt="berlina de fresa">
-            <div class="card-body">
-              <h2 class="card-title">Berlina de fresa</h2>
-              <p class="card-text">Berlina glaseada rellena de mermelada de fresa </p>
-              <p class="precio">1,70€/ud</p>
-            </div> 
-          </div>
+  <div class="productos">
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/donuts.jpg" alt="donuts">
+      <div class="card-body">
+        <h2 class="card-title">Donuts caseros</h2>
+        <p class="card-text">Donuts glaseados hechos con nuestra masa al mas estilo pedrin</p>
+        <p class="precio">1€/ud</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/BizcochoYogur.jpg" alt="bizcocho de yogur">
-            <div class="card-body">
-              <h2 class="card-title">Bizcocho de yogur</h2>
-              <p class="card-text">Bizcocho casero de yogur muy tierno y sabroso</p>
-              <p class="precio">12€</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/baguette.jpg" alt="baguette">
+      <div class="card-body">
+        <h2 class="card-title">Baguette</h2>
+        <p class="card-text">barra de pan baguette crujiente por fuera y tierna </p>
+        <p class="precio">0,60€</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/croissant.jpg" alt="croissant">
-            <div class="card-body">
-              <h2 class="card-title">Croissant</h2>
-              <p class="card-text">Croissant crujiente con un toque de caramelo</p>
-              <p class="precio">0,50€/ud</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/berlina.jpeg" alt="berlina">
+      <div class="card-body">
+        <h2 class="card-title">Berlina de crema</h2>
+        <p class="card-text">Berlina casera hecha con nuestra crema y masa muy esponjosa</p>
+        <p class="precio">1,50€/ud</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/croissantChocolate.jpg" alt="croissant chocolate">
-            <div class="card-body">
-              <h2 class="card-title">Croissant chocolate</h2>
-              <p class="card-text">Croissant bañado con chocolate 75% cacao </p>
-              <p class="precio">0,60/ud€</p>
-            </div> 
-          </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/donutsChocolate.jpg" alt="donuts chocolate">
-            <div class="card-body">
-              <h2 class="card-title">Donuts de chocolate</h2>
-              <p class="card-text">Donuts rellenos y cubiertos de chocolate</p>
-              <p class="precio">1€/ud</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/berlinasFresa.jpg" alt="berlina de fresa">
+      <div class="card-body">
+        <h2 class="card-title">Berlina de fresa</h2>
+        <p class="card-text">Berlina glaseada rellena de mermelada de fresa </p>
+        <p class="precio">1,70€/ud</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/galletasChocolate.jpg" alt="galletas de chocolate">
-            <div class="card-body">
-              <h2 class="card-title">Chocogalletas</h2>
-              <p class="card-text">galletas con pepitas de chocolate y masa sabor vainilla</p>
-              <p class="precio">10€/kilo</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/BizcochoYogur.jpg" alt="bizcocho de yogur">
+      <div class="card-body">
+        <h2 class="card-title">Bizcocho de yogur</h2>
+        <p class="card-text">Bizcocho casero de yogur muy tierno y sabroso</p>
+        <p class="precio">12€</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/HarinaIntegral.jpg" alt="harina integral">
-            <div class="card-body">
-              <h2 class="card-title">Harina integral</h2>
-              <p class="card-text">prueba nuestra harina integral casera</p>
-              <p class="precio">1€/kilo</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/croissant.jpg" alt="croissant">
+      <div class="card-body">
+        <h2 class="card-title">Croissant</h2>
+        <p class="card-text">Croissant crujiente con un toque de caramelo</p>
+        <p class="precio">0,50€/ud</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/HarinaTrigo.jpg" alt="harina trigo">
-            <div class="card-body">
-              <h2 class="card-title">Harina trigo</h2>
-              <p class="card-text">prueba nuestra harina de trigo casera</p>
-              <p class="precio">1€/kilo</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/croissantChocolate.jpg" alt="croissant chocolate">
+      <div class="card-body">
+        <h2 class="card-title">Croissant chocolate</h2>
+        <p class="card-text">Croissant bañado con chocolate 75% cacao </p>
+        <p class="precio">0,60/ud€</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/magdalenas.jpg" alt="magdalenas">
-            <div class="card-body">
-              <h2 class="card-title">Magdalenas</h2>
-              <p class="card-text">Magdalenas caseras con masa blanda con mucho sabor</p>
-              <p class="precio">8€/kilo</p>
-            </div> 
-          </div>
-          
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/magdalenas-chocolate.jpg" alt="magdalenas chocolate">
-            <div class="card-body">
-              <h2 class="card-title">Magdalenas choco
-              </h2>
-              <p class="card-text">Magdalenas de chocolate con pepitas de chocolate</p>
-              <p class="precio">9€/kilo</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/donutsChocolate.jpg" alt="donuts chocolate">
+      <div class="card-body">
+        <h2 class="card-title">Donuts de chocolate</h2>
+        <p class="card-text">Donuts rellenos y cubiertos de chocolate</p>
+        <p class="precio">1€/ud</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/pan-chapata.jpg" alt="pan chapata">
-            <div class="card-body">
-              <h2 class="card-title">Pan chapata</h2>
-              <p class="card-text">Pan de chapata crujiente con miga blanda</p>
-              <p class="precio">1,20€</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/galletasChocolate.jpg" alt="galletas de chocolate">
+      <div class="card-body">
+        <h2 class="card-title">Chocogalletas</h2>
+        <p class="card-text">galletas con pepitas de chocolate y masa sabor vainilla</p>
+        <p class="precio">10€/kilo</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/Pan-de-ajo-y-queso.jpg" alt="pan de ajo">
-            <div class="card-body">
-              <h2 class="card-title">Pan de ajo </h2>
-              <p class="card-text">Prueba nuestro famososo pan de ajo con mucho queso</p>
-              <p class="precio">6€</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/HarinaIntegral.jpg" alt="harina integral">
+      <div class="card-body">
+        <h2 class="card-title">Harina integral</h2>
+        <p class="card-text">prueba nuestra harina integral casera</p>
+        <p class="precio">1€/kilo</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/panPizza.jpg" alt="pan pizza">
-            <div class="card-body">
-              <h2 class="card-title">Pan pizza</h2>
-              <p class="card-text">Pan pizza con tomate queso pimiento y jamon</p>
-              <p class="precio">1,20€/ud</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/HarinaTrigo.jpg" alt="harina trigo">
+      <div class="card-body">
+        <h2 class="card-title">Harina trigo</h2>
+        <p class="card-text">prueba nuestra harina de trigo casera</p>
+        <p class="precio">1€/kilo</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/tarta-queso.jpeg" alt="tarta-queso">
-            <div class="card-body">
-              <h2 class="card-title">Tarta de queso</h2>
-              <p class="card-text">Tarta super cremosa y sabrosa de queso</p>
-              <p class="precio">16€</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/magdalenas.jpg" alt="magdalenas">
+      <div class="card-body">
+        <h2 class="card-title">Magdalenas</h2>
+        <p class="card-text">Magdalenas caseras con masa blanda con mucho sabor</p>
+        <p class="precio">8€/kilo</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/pastel-carne.jpg" alt="pastel carne">
-            <div class="card-body">
-              <h2 class="card-title">Pastel carne</h2>
-              <p class="card-text">Pastel de carne y pure con queso </p>
-              <p class="precio">14,50€</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/magdalenas-chocolate.jpg" alt="magdalenas chocolate">
+      <div class="card-body">
+        <h2 class="card-title">Magdalenas choco
+        </h2>
+        <p class="card-text">Magdalenas de chocolate con pepitas de chocolate</p>
+        <p class="precio">9€/kilo</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/buñuelos.jpg" alt="buñuelos">
-            <div class="card-body">
-              <h2 class="card-title">Buñuelos</h2>
-              <p class="card-text">Buñuelos rellenos de crema pastelera</p>
-              <p class="precio">10€/kilo</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/pan-chapata.jpg" alt="pan chapata">
+      <div class="card-body">
+        <h2 class="card-title">Pan chapata</h2>
+        <p class="card-text">Pan de chapata crujiente con miga blanda</p>
+        <p class="precio">1,20€</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/ensaimada.jpg" alt="ensaimada">
-            <div class="card-body">
-              <h2 class="card-title">Ensaimada</h2>
-              <p class="card-text">Ensaimada rellena de nutella y cupierta de azucar glas</p>
-              <p class="precio">13€</p>
-            </div> 
-          </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/Pan-de-ajo-y-queso.jpg" alt="pan de ajo">
+      <div class="card-body">
+        <h2 class="card-title">Pan de ajo </h2>
+        <p class="card-text">Prueba nuestro famososo pan de ajo con mucho queso</p>
+        <p class="precio">6€</p>
+      </div>
+    </div>
 
-          <div class="card text-left">
-            <img class="card-img-top" src="img-producto/bollos-choco.jpg" alt="bollos">
-            <div class="card-body">
-              <h2 class="card-title">Bollos de chocolate</h2>
-              <p class="card-text">Bollos de leche rellenos de chocolate</p>
-              <p class="precio">1€/ud</p>
-            </div> 
-        </div>
-    </div>  
-    <footer>
-        <div class="f-izq">
-            <h3>informacion</h3>
-            <a href="">¿Quienes somos?</a> <br>
-            <a href="">Politica de privacidad</a> <br>
-            <a href="">Politica de cookies</a> <br>
-            <a href="">Condiciones legales</a>
-    
-        </div>
-        <hr>
-        <div class="f-cntr">
-            <h3>haz tu pedido por telefono</h3>
-            <h1>692 432 501</h1>
-            <p>horario de lunes a viernes de 8:00 a 21:00</p>
-        </div>
-        <hr>    
-        <div class="f-der">
-            <h3>siguenos en redes sociales</h3>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/panPizza.jpg" alt="pan pizza">
+      <div class="card-body">
+        <h2 class="card-title">Pan pizza</h2>
+        <p class="card-text">Pan pizza con tomate queso pimiento y jamon</p>
+        <p class="precio">1,20€/ud</p>
+      </div>
+    </div>
 
-    </footer>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/tarta-queso.jpeg" alt="tarta-queso">
+      <div class="card-body">
+        <h2 class="card-title">Tarta de queso</h2>
+        <p class="card-text">Tarta super cremosa y sabrosa de queso</p>
+        <p class="precio">16€</p>
+      </div>
+    </div>
 
-    <script src="https://kit.fontawesome.com/632c91cfcd.js" crossorigin="anonymous"></script>
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/pastel-carne.jpg" alt="pastel carne">
+      <div class="card-body">
+        <h2 class="card-title">Pastel carne</h2>
+        <p class="card-text">Pastel de carne y pure con queso </p>
+        <p class="precio">14,50€</p>
+      </div>
+    </div>
+
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/buñuelos.jpg" alt="buñuelos">
+      <div class="card-body">
+        <h2 class="card-title">Buñuelos</h2>
+        <p class="card-text">Buñuelos rellenos de crema pastelera</p>
+        <p class="precio">10€/kilo</p>
+      </div>
+    </div>
+
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/ensaimada.jpg" alt="ensaimada">
+      <div class="card-body">
+        <h2 class="card-title">Ensaimada</h2>
+        <p class="card-text">Ensaimada rellena de nutella y cupierta de azucar glas</p>
+        <p class="precio">13€</p>
+      </div>
+    </div>
+
+    <div class="card text-left">
+      <img class="card-img-top" src="img-producto/bollos-choco.jpg" alt="bollos">
+      <div class="card-body">
+        <h2 class="card-title">Bollos de chocolate</h2>
+        <p class="card-text">Bollos de leche rellenos de chocolate</p>
+        <p class="precio">1€/ud</p>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="f-izq">
+      <h3>informacion</h3>
+      <a href="">¿Quienes somos?</a> <br>
+      <a href="">Politica de privacidad</a> <br>
+      <a href="">Politica de cookies</a> <br>
+      <a href="">Condiciones legales</a>
+
+    </div>
+    <hr>
+    <div class="f-cntr">
+      <h3>haz tu pedido por telefono</h3>
+      <h1>692 432 501</h1>
+      <p>horario de lunes a viernes de 8:00 a 21:00</p>
+    </div>
+    <hr>
+    <div class="f-der">
+      <h3>siguenos en redes sociales</h3>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+  </footer>
+
+  <script src="https://kit.fontawesome.com/632c91cfcd.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

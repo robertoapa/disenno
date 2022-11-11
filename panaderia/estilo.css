@@ -1,13 +1,16 @@
+/*----------------------------INDEX.HTML--------------------------------------- */
+
 .izq{
-display: flex;
-width: 5.5rem;
-height: 100%;
-background-color: azure;
+
+    display: flex;
+    width: 5.5rem;
+    height: 100%;
+    background-color: azure;
 
 }
 .der{
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
     padding-top: auto;
     padding-bottom: auto;
     display:flex;
@@ -63,7 +66,7 @@ header{
 
 }
 .letra{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100%;
     padding-top: 20%;
     color: white;
@@ -166,7 +169,7 @@ footer>hr{
     margin-right: 1rem;
     font-size: 1.5rem;
 }
-
+/* ---------------------------------------CARRITO-DESPLEGABLE--------------------------------------- */
 .carrito-usuario{
     display: flex;
     
@@ -185,7 +188,7 @@ footer>hr{
     transform: scale(1.1);
 }
 
-
+/* -----------------------------------PRODUCTOS.HTML----------------------------------- */
 .card-img-top{
     height: 10rem;
     width: 14rem;
@@ -250,3 +253,158 @@ footer>hr{
     margin-right: 1rem;
     margin-top: 1rem;
 }
+
+.addCarrito{
+    padding: 1rem;
+    
+
+}
+.headerCarrito{
+    display: flex;   
+    color: rgba(150, 150, 150, 0.588);
+}
+.footerCarrito{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.headerCarrito>img{
+    height: 3.5rem;
+
+}
+.pagarCarrito{
+    display: flex;
+    background-color: rgb(255, 151, 33);
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  
+}
+
+.pagarCarrito>a{
+    text-decoration: none;
+    color: white;
+}
+/* ----------------------------CESTA.HTML--------------------------------------- */
+
+.Micesta{
+    padding-left: 5rem;
+}
+main{
+    display: flex;
+}
+.articulo{
+    margin-top: 1rem;
+    height: 9rem;
+    display: flex;
+    padding: 1rem;
+    border: 0.5px rgba(61, 61, 61, 0.793) solid;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+   
+}
+.ArticulosCesta{
+    width: 55%;
+}
+
+.especificaciones{
+    height: 5rem;
+    width: 10rem;
+    margin-left: 1rem;
+}
+.articulo>img{
+    height: 5rem;
+    margin-top: 1rem;
+}
+.udPedido>table,td,th{
+    border: 1px black solid;
+    border-collapse: collapse;
+    width: 4rem;
+    text-align: center;
+    height: 1rem;
+}
+.udPedido{
+    
+    width: 60%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.guardarPedido{
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 25%;
+    border: 0.5px rgba(61, 61, 61, 0.793) solid;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 14rem;
+}
+
+.subtotalArt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.guardarPedido>.boton{
+    width: 100%;
+    height: 2rem;
+    background-color: rgb(254, 164, 37);
+    border: 0;
+    color: white;
+    border-radius: 4px;
+}
+
+
+/* ------------------POLITICA.HTML------------------------------ */
+
+.politicaPrivacidad{
+    width: 35%;
+   
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ---------------------PEDIDOSESPECIALES.HTML--------------------------------- */
+
+
+.formularioEspeciales>form{
+    border-radius: 2rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formularioEspeciales>form>fieldset{
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    border:1px solid;
+    padding-left: 2rem;
+}
+.formularioEspeciales>form>fieldset>legend{
+    font-size: large;
+}
+#numeros{
+    margin-top: 1rem;
+}
+#botonEspeciales{
+    width: 10rem;
+    margin-top: 1rem;
+    border: 0px;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 176, 31);
+    height: 2rem;
+}
+.formularioEspeciales>form>fieldset>div{
+    display: flex;
+    justify-content: center;
+}
+.formularioEspeciales{
+    margin: 2rem;
+}
+

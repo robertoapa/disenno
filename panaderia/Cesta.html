@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <title>Document</title>
 </head>
-
 <body>
     <script>
         const abrir_panel = () => {
@@ -51,7 +47,6 @@
             <a href="Cesta.html">Total pedido: 17,70€</a>
         </div>
     </div>
-
     <header>
         <div class="izq">
             <img class="logo" src="img/panaderia_pedrin__1_-removebg-preview.png" alt="logo">
@@ -64,41 +59,63 @@
         <div class="carrito-usuario">
             <i class="fa-solid fa-cart-shopping" id="carrito" onclick="abrir_panel()"></i>
             <i class="fa-solid fa-user"></i>
+
         </div>
     </header>
-
-
-
-
-    <div class="titulo">
-        <div class="letra">
-            <h1>Panadería Pedrín</h1>
-            <h3>El mejor pan artesano con masa madre</h3>
-        </div>
+    <div class="Micesta">
+        <h1>Mi cesta</h1>
+        <p>2 articulos</p>
+        <main>
+            <div class="ArticulosCesta">
+                <div class="articulo">
+                    <img src="img-producto/tarta-queso.jpeg" alt="tarta-queso">
+                    <div class="especificaciones">
+                        <p>Tarta de queso</p>
+                        <p style="color: rgb(240, 34, 34);">16€</p>
+                        <p style="color:rgb(36, 219, 36);">recibelo mañana</p>
+                    </div>
+                    <div class="udPedido">
+                        <table>
+                            <tr>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>+</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="articulo">
+                    <img src="img-producto/berlinasFresa.jpg" alt="berlina fresa">
+                    <div class="especificaciones">
+                        <p>Berlinas de fresa</p>
+                        <p style="color: rgb(240, 34, 34);">1,70€</p>
+                        <p style="color:rgb(36, 219, 36);">recibelo mañana</p>
+                    </div>
+                    <div class="udPedido">
+                        <table>
+                            <tr>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>+</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="guardarPedido">
+                <h3>Resumen</h3>
+                <div class="subtotalArt">
+                    <p>subtotal articulos</p>
+                    <p >17,70€</p>
+                </div>
+                <hr>
+                <p>Total(impuestos incluidos) 17,70€</p>
+                <input type="button" value="Guardar y continuar" class="boton">
+            </div>
+            
+        </main>
     </div>
-    <h2 class="diferencia">Que nos diferencia</h2>
-    <hr class="linea">
-    <div class="cualidades">
-        <div class="hola">
-            <i id="cuali" class="fa-solid fa-bread-slice"></i>
-
-        </div>
-
-        <div class="hola">
-            <i id="cuali" class="fa-solid fa-cake-candles"></i>
-
-        </div>
-
-        <div class="hola">
-            <i id="cuali" class="fa-solid fa-people-carry-box"></i>
-        </div>
-    </div>
-    <div class="texto-diferencia">
-        <p>Innovación</p>
-        <p>Personalización</p>
-        <p>Pedidos a domicilio</p>
-    </div>
-
     <footer>
         <div class="f-izq">
             <h3>Información</h3>
@@ -124,6 +141,6 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/632c91cfcd.js" crossorigin="anonymous"></script>
-</body>
 
+</body>
 </html>
